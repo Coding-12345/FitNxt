@@ -1,0 +1,33 @@
+<!-- templates/home.html -->
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitNxt - Where Fitness Meets Progress</title>
+    <link rel="stylesheet" href="{% static 'first.css' %}" >
+</head>
+<body>
+    <div class="hero">
+        <div class="navbar">
+            <img src="{% static 'Logo_FitNxt.png' %}" alt="FitNxt Logo" class="logo">
+            <ul>
+                {% comment %} <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'login' %}">Login/SignUp</a></li> {% endcomment %}
+            </ul>
+        </div>
+        <div class="heading">
+            <h1>Welcome to FitNxt</h1>
+            <p>Where fitness meets progress!</p>
+            <div>
+                <a href="{% url 'login' %}">
+                    <button type="button"><span></span>Join Us Today!</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

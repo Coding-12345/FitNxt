@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static "allstyle.css" %}"> 
+  </head>
+  <body>
+    <div class="ctn">
+    <h1 id="pad">Warm Up:</h1>
+    <br>
+    <p>A quick and effective 4-5 minute warm-up can include dynamic exercises such as jumping jacks, bodyweight squats, arm circles, high knees, and dynamic lunges. These movements engage major muscle groups, elevate your heart rate, and enhance flexibility, preparing your body for more intense physical activity.</p>
+    <div class="card">
+      <div class="image">
+        <img class='sze' src="{% static 'Jumping.gif' %}" alt="" />
+      </div>
+      <div class="title">
+        <h1>Jumping Jacks</h1>
+      </div>
+      <div class="des">
+        <!-- <p><h5>Sets:3-5</h5><h5>Repititions:12-20</h5><h5>Time for each Set:1-2 min</h5><h5>Rest Time:1-2 min</h5></p> -->
+        <!-- <a href="Exercise/Pushup/pushup.html"><button>Read More...</button></a> -->
+      </div>
+    </div>
+    <div class="card">
+      <div class="image">
+        <img class='sze' src="{% static 'BodyWei.gif' %}" alt="" />
+      </div>
+      <div class="title">
+        <h1>Bodyweight Squats</h1>
+      </div>
+      <div class="des">
+        <!-- <p><h5>Sets:3-5</h5><h5>Repititions:12-20</h5><h5>Time for each Set:1-2 min</h5><h5>Rest Time:1-2 min</h5></p> -->
+        <!-- <a href="Exercise/Pushup/pushup.html"><button>Read More...</button></a> -->
+      </div>
+    </div>
+    <div class="card">
+      <div class="image">
+        <img class='sze' src="{% static 'armgif.gif' %}" alt="" />
+      </div>
+      <div class="title">
+        <h1>Arm Circles</h1>
+      </div>
+      <div class="des">
+        <!-- <p><h5>Sets:3-5</h5><h5>Repititions:12-20</h5><h5>Time for each Set:1-2 min</h5><h5>Rest Time:1-2 min</h5></p> -->
+        <!-- <a href="Exercise/Pushup/pushup.html"><button>Read More...</button></a> -->
+      </div>
+    </div>
+
+    
+    <div class="main">
+
+        <div class="">
+          <h1>Your Exercise Plan is as follows:</h1>
+        </div> 
+
+      <div class="card">
+        <div class="image">
+          <img class='sze' src="{% static 'Push_up.jpg' %}" alt="" />
+        </div>
+        <div class="title">
+          <h1>Pushup</h1>
+        </div>
+        <div class="des">
+          <p><h5>Sets:3-5</h5><h5>Repititions:12-20</h5><h5>Time for each Set:1-2 min</h5><h5>Rest Time:1-2 min</h5></p>
+          <a href="{% url 'hpu' %}"><button>Read More...</button></a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image">
+          
+          <img class='sze' src="{% static 'Situps.jpg' %}" alt="" />
+        </div>
+        <div class="title">
+          <h1>Situps</h1>
+        </div>
+        <div class="des">
+          <p><h5>Sets:3-5</h5><h5>Repititions:10-15</h5><h5>Time for each Set:1-2 min</h5><h5>Rest Time:2-3 min</h5></p>
+          <a href="{% url 'home_situps' %}"><button>Read More...</button></a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image">
+          <img class='sze' src="{% static 'Pullups.jpg' %}" alt="" />
+        </div>
+        <div class="title">
+          <h1>Pullups</h1>
+        </div>
+        <div class="des">
+          <p><h5>Sets:6-7</h5><h5>Repititions:12-20</h5><h5>Time for each Set:60-80 sec</h5><h5>Rest Time:1-2 min</h5></p>
+          <a href="{% url "home_pullups" %}"><button>Read More...</button></a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image">
+          <img class='sze' src="{% static 'Squats.png' %}" alt="" />
+        </div>
+        <div class="title">
+          <h1>Squats</h1>
+        </div>
+        <div class="des">
+          <p><h5>Sets:3-5</h5><h5>Repititions:12-20</h5><h5>Time for each Set:1-2 min</h5><h5>Rest Time:1-2 min</h5></p>
+          <a href="{% url "home_squats" %}"><button>Read More...</button></a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
